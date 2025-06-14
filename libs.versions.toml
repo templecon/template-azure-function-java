@@ -1,0 +1,20 @@
+[versions]
+kotlin = "2.1.21"
+ktor = "3.1.3"
+
+[plugins]
+serialization = { version.ref = "kotlin", id = "org.jetbrains.kotlin.plugin.serialization" }
+kotlin-jvm = { version.ref = "kotlin", id = "org.jetbrains.kotlin.jvm" }
+ktor= { id="io.ktor.plugin" , version.ref = "ktor" }
+
+[libraries]
+sealization-json = "org.jetbrains.kotlinx:kotlinx-serialization-json:1.8.1"
+
+ktor-server-core = { module = "io.ktor:ktor-server-core", version.ref = "ktor" }
+ktor-server-netty = { module = "io.ktor:ktor-server-netty", version.ref = "ktor" }
+ktor-server-callLogging = { module = "io.ktor:ktor-server-call-logging", version.ref = "ktor" }
+
+mcp="io.modelcontextprotocol:kotlin-sdk:0.5.0"
+
+[bundles]
+ktor-server = ["ktor-server-core", "ktor-server-netty", "ktor-server-callLogging"]
