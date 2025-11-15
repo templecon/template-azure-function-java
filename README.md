@@ -1,6 +1,6 @@
 # How to clone
 ```sh
-git clone https://github.com/concertypin/template -b azure-function-java
+git clone https://github.com/templecon/template-azure-function-java
 ```
 # How to build
 ```sh
